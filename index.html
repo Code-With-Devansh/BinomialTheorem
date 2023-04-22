@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Document</title>
+</head>
+
+<body class="bg-gray-100">
+    <div class="flex flex-col justify-center items-center my-16 mx-4">
+        <h1 class="text-3xl md:text-5xl font-medium text-center">Binomial Theorem Expander</h1>
+        <h2 class="text-xl my-5 font-semibold text-center">Enter Your Expression Below</h2>
+        <div class="flex">
+            <div class="md:text-9xl text-8xl mt-3">(</div>
+            <div class="flex my-6">
+                <input type="text" id="a" class="my-5 text-3xl md:w-28 w-16 md:p-6 p-3 hover:border-2 hover:border-blue-600 rounded-lg focus:border-2 focus:border-blue-800 outline-none text-center">
+                <div class="md:text-8xl md:mt-0 mt-2 text-7xl">+</div>
+                <input type="text" id="b" class="my-5  text-3xl md:w-28 w-16 md:p-6 p-3  hover:border-2 hover:border-blue-600 rounded-lg focus:border-2 focus:border-blue-800 outline-none text-center">
+            </div>
+            <div class="md:text-9xl text-8xl mt-3">)</div>
+            <input type="text" id="power" class="my-2 md:text-2xl text-xl md:w-14 w-12 h-10 p-2 hover:border-2 hover:border-blue-600 rounded-lg focus:border-2 focus:border-blue-800 outline-none text-center">
+        </div>
+        <button class="bg-green-600 hover:scale-125 duration-150 px-4 py-2 text-3xl rounded-lg text-white click:scale-100" id="Expand">Expand</button>
+        <div class="bg-white my-16 px-5 py-2 text-2xl rounded-md font-medium hidden" id="result"></div>
+    </div>
+</body>
+<script src="script.js"></script>
+</html>
